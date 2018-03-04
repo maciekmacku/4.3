@@ -1,11 +1,40 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic);
 
-@media(min-width: 1200px) {
+@media (min-width: 1200px) {
     .container {
         margin: 0 auto;
-        
         width:100%;
 }
+}
+@media (min-width: 769px) and (max-width: 1199px){
+    .container {width:100%;}
+    .header_links > li {
+        margin: 0 5px;
+        background:#ffeaa7;
+    }
+    .photo {  
+    margin-right: 5%;
+}
+    .header {
+        background:#ffeaa7;
+    }
+}
+@media (max-width: 768px){
+    .header_links {
+        float:none;
+        text-align: center;
+        background:#ffeaa7;
+    }
+    .header {
+        text-align: center;
+        background:#ffeaa7;
+    }
+    .photo {
+    float:none;
+    width:100%;   
+    padding: 5px 10px;
+    }
+        
 }
 
 * {
@@ -42,12 +71,16 @@ body {
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
-
+.header {
+    background:#ffeaa7;
+    padding: 5px;
+    width: 100%;
+}
 .header_links {
 float: right;
   margin: 10px auto;
-  padding: 0;
   list-style-type: none;
+    
   
 }
 .logo {
@@ -58,18 +91,23 @@ float: right;
 }    
 .header_links > li {
     display: inline-block;
+    border: 1px solid black;
+    margin: 5px 20px;
+    padding: 0 10px;
+    
     
 }
 .header_links > li > a {
-    line-height: 50px;
+    line-height: 30px;
   display: block;
   color: black;
-  padding: 0 20px;
+  padding: 5px  20px;
   text-decoration: none;
   text-transform: uppercase;
 }
 .header_links > li > a:hover {
     color: deepskyblue;
+    transition: 0.3s;
 }
 
 .clearfix {
@@ -93,12 +131,12 @@ float: right;
 .gallery {
     text-align: center;
     width:100%;
+    background: #fab1a0;
 }
 .photo {
     float:left;
-    display:block; 
     width:30%;   
-     margin-right: 5%;
+    margin-right: 5%;
 }
 .photo:last-of-type {
     margin-right: 0;
@@ -106,5 +144,16 @@ float: right;
 .photos {
     width: 250px;
     height:300px;
-   
+}
+.map {
+    width: 100%;
+    height: 40vh;   
+}
+
+.copyright {
+    background: orange;
+    width:100%;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 5px;
 }
